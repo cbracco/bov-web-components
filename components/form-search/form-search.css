@@ -1,0 +1,97 @@
+@import url('../../assets/styles/variables.css');
+@import url('../form/form.css');
+
+/**
+ * Form: Search ($form-search)
+ */
+
+:root {
+  /* Default */
+  --form-select-custom-after-right: var(--spacing-2);
+  --form-select-custom-after-border-width: var(--spacing-5);
+  --form-select-custom-after-border-color: var(--color-gray-dark);
+  --form-select-custom-after-margin: -2px;
+  --form-select-custom-after-z-index: var(--z-index-2);
+  --form-select-custom-form-select-max-width: 120px;
+  --form-select-custom-form-select-padding: 42px;
+  --form-select-custom-form-select-font-size: var(--font-size-4);
+  --form-group-bar-addon-focus-z-index: var(--z-index-2);
+}
+
+/**
+ * CSS-Only custom <select> menus
+ * Credit: http://filamentgroup.github.io/select-css/demo/
+ */
+
+.form-select-custom {
+  position: relative;
+  display: block;
+}
+
+/**
+ * 1. Make the <select> behind the arrow clickable in some browsers.
+ * 2. Creates a faux arrow icon.
+ */
+
+.form-select-custom:after {
+  display: block;
+  content: " ";
+	position: absolute;
+	top: 50%;
+	right: var(--form-select-custom-after-right);
+  z-index: var(--form-select-custom-after-z-index);
+  pointer-events: none; /* 1 */
+  width: 0; /* 2 */
+  height: 0; /* 2 */
+  border-left: var(--form-select-custom-after-border-width) solid transparent; /* 2 */
+  border-right: var(--form-select-custom-after-border-width) solid transparent; /* 2 */
+  border-top: var(--form-select-custom-after-border-width) solid var(--form-select-custom-after-border-color); /* 2 */
+  margin-top: var(--form-select-custom-after-margin); /* 2 */
+}
+
+/**
+ * 1. Make room for custom dropdown icon.
+ * 2. Set `font-size` explicitly to prevent iOS page zoom on focus.
+ */
+
+.form-select-custom .form-select {
+  width: 100%;
+  max-width: var(--form-select-custom-form-select-max-width);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding-right: var(--form-select-custom-form-select-padding); /* 1 */
+  font-size: var(--form-select-custom-form-select-font-size); /* 2 */
+}
+
+.form-group-bar {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.form-group-bar-addon {
+  display: table-cell;
+  width: 1%;
+  vertical-align: middle;
+}
+
+.form-group-bar-addon:first-child > * {
+  margin-right: -1px;
+}
+
+.form-group-bar-addon:last-child > * {
+  margin-left: -1px;
+}
+
+.form-group-bar-addon .form-input,
+.form-group-bar-addon .form-select {
+  width: auto;
+}
+
+.form-group-bar .form-input:focus,
+.form-group-bar .form-select:focus {
+  position: relative;
+  z-index: var(--form-group-bar-addon-focus-z-index);
+}

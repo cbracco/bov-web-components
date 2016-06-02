@@ -89,6 +89,14 @@ h6 {
 }
 
 /**
+ * Backlink ($backlink)
+ */
+
+.backlink {
+  display: inline-block;
+}
+
+/**
  * Banner ($banner)
  */
 
@@ -148,27 +156,36 @@ h6 {
   margin-bottom: var(--spacing-macro-5);
 }
 
-.main-section h1,
-.main-section h2,
-.main-section h3,
-.main-section h4,
-.main-section h5,
-.main-section h6 {
+.main-section .wrapper > h1,
+.main-section .wrapper > h2,
+.main-section .wrapper > h3,
+.main-section .wrapper > h4,
+.main-section .wrapper > h5,
+.main-section .wrapper > h6 {
   margin-top: var(--spacing-em-2);
   margin-bottom: var(--spacing-em-5);
 }
 
-.main-section h1 {
+.main-section .wrapper > h1 {
   padding-bottom: var(--spacing-em-6);
   border-bottom: 1px solid var(--color-gray-light);
 }
 
-.main-section h4,
-.main-section h5,
-.main-section h6 {
+.main-section .wrapper > h4,
+.main-section .wrapper > h5,
+.main-section .wrapper > h6 {
   color: var(--color-gray-dark);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-2);
+}
+
+/**
+ * Icon ($icon)
+ */
+
+.icon {
+  display: inline-block;
+  text-decoration: none;
 }
 
 /**

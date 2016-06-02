@@ -3,6 +3,10 @@
  */
 
 :root {
+  /* Border Radii */
+  --border-radius-1: 4px;
+  --border-radius-circle: 50%;
+
   /* Breakpoints */
   --breakpoint-xxs: 320px;
   --breakpoint-xs: 480px;
@@ -77,8 +81,8 @@
   --spacing-1: 24px;
   --spacing-2: 16px;
   --spacing-3: 12px;
-  --spacing-4: 8px;
-  --spacing-5: 4px;
+  --spacing-4: 10px;
+  --spacing-5: 6px;
   --spacing-6: 2px;
   --spacing-macro-1: 144px;
   --spacing-macro-2: 96px;

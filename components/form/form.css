@@ -1,0 +1,156 @@
+@import url('../../assets/styles/variables.css');
+
+/**
+ * Form ($form)
+ * Reset some form element styles and give them sensible defaults.
+ */
+
+:root {
+  /* Default */
+  --form-legend-font-weight: var(--font-weight-2);
+  --form-legend-color: var(--color-gray-darkest);
+  --form-legend-margin: 0 0 var(--spacing-2);
+  --form-input-color-focus: var(--color-theme-primary);
+  --form-input-margin: var(--spacing-6);
+  --form-input-padding: var(--spacing-4) var(--spacing-4);
+  --form-input-font-size: var(--font-size-4);
+  --form-input-line-height: 1;
+  --form-input-border: 1px solid var(--color-gray-light);
+  --form-select-height: 40px;
+  --form-group-margin: var(--spacing-2);
+  --form-group-inline-margin: var(--spacing-5);
+}
+
+/**
+ * Improve usability and consistency of cursor style between image-type <input>
+ * and others.
+ */
+
+.form button,
+.form html input[type="button"],
+.form input[type="checkbox"],
+.form input[type="file"],
+.form input[type="image"],
+.form input[type="radio"],
+.form input[type="reset"],
+.form input[type="submit"],
+.form label,
+.form select {
+ cursor: pointer;
+}
+
+/**
+ * Fix vertical alignment inconsistencies with certain form inputs.
+ */
+
+.form input[type="color"],
+.form input[type="range"] {
+  vertical-align: middle;
+}
+
+/**
+ * 1. Set checkbox, image, and radio inputs to `inline-block`, by default.
+ */
+
+.form input[type="checkbox"],
+.form input[type="image"],
+.form input[type="radio"] {
+  display: inline-block; /* 1 */
+  width: auto;
+}
+
+/**
+ * 1. Constrict `max-width` for file inputs to avoid overflow issues.
+ */
+
+.form input[type="file"] {
+  max-width: 100%; /* 1 */
+  cursor: pointer;
+}
+
+/**
+ * Remove rounded corners that iOS and Chrome apply to <input> buttons and
+ * <select> menus.
+ */
+
+.form input[type="submit"],
+.form input[type="button"],
+.form input[type="image"],
+.form input[type="reset"],
+.form select {
+  border-radius: 0;
+}
+
+/**
+ * 1. Set `min-width` to 0 to avoid overflow issues in Chrome.
+ * 2. Remove default `margin`, `padding`, and `border` across browsers.
+ */
+
+.form-fieldset {
+  min-width: 0; /* 1 */
+  margin: 0;    /* 2 */
+  padding: 0;   /* 2 */
+  border: 0;    /* 2 */
+}
+
+.form-legend {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: var(--form-legend-margin);
+  color: var(--form-legend-color);
+  font-weight: var(--form-legend-font-weight);
+}
+
+.form-label {
+  display: block;
+}
+
+/* Only add spacing if `.form-input` immediately follows `.form-label` */
+.form-label + .form-input {
+  margin-top: var(--form-input-margin);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  display: block;
+  width: 100%;
+  font-size: var(--form-input-font-size);
+  line-height: var(--form-input-line-height);
+  padding: var(--form-input-padding);
+  border: var(--form-input-border);
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--form-input-color-focus);
+}
+
+.form-select {
+  height: var(--form-select-height);
+}
+
+/**
+ * 1. Restrict width to 100% of its parent to avoid horizontal overflow issues.
+ * 2. Force `height: auto;` for <textarea> across browsers.
+ * 3. <textarea> elements should only resize vertically.
+ */
+
+.form-textarea {
+  max-width: 100%;  /* 1 */
+  height: auto;     /* 2 */
+  resize: vertical; /* 3 */
+}
+
+.form-group + .form-group {
+  margin-top: var(--form-group-margin);
+}
+
+.form-group-inline > * {
+  display: inline-block;
+  width: auto;
+  margin-right: var(--form-group-inline-margin);
+}

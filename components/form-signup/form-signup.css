@@ -1,0 +1,27 @@
+@import url('../../assets/styles/variables.css');
+@import url('../form/form.css');
+
+/**
+ * Form: Signup ($form-signup)
+ */
+
+:root {
+  /* Default */
+  --form-signup-padding: var(--spacing-1);
+  --form-signup-border: 1px solid var(--color-gray-light);
+  --form-signup-border-top: var(--spacing-5) solid var(--color-theme-primary);
+  --form-signup-form-legend-font-size: var(--font-size-1);
+  --form-signup-form-legend-font-weight: var(--font-weight-1);
+}
+
+.form-signup {
+  padding: var(--form-signup-padding);
+  border: var(--form-signup-border);
+  border-top: var(--form-signup-border-top);
+}
+
+.form-signup .form-legend {
+  font-size: var(--form-signup-form-legend-font-size);
+  font-weight: var(--form-signup-form-legend-font-weight);
+  text-align: center;
+}

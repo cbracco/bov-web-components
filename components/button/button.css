@@ -10,7 +10,7 @@
   --button-font-family: var(--font-family-1);
   --button-font-weight: var(--font-weight-2);
   --button-font-size: var(--font-size-4);
-  --button-line-height: var(--line-height-2);
+  --button-line-height: 1;
   --button-color: var(--color-white);
   --button-background: var(--color-theme-secondary);
   --button-background-hover: var(--color-theme-secondary-dark);
@@ -56,6 +56,10 @@
   box-shadow: inset 0 0 var(--button-box-shadow-blur) var(--button-box-shadow-color);
 }
 
+/**
+ * Button: Sizes
+ */
+
 .button-sm {
   padding: var(--button-sm-padding);
   font-size: var(--button-sm-font-size);
@@ -69,4 +73,9 @@
 .button-lg {
   padding: var(--button-lg-padding);
   font-size: var(--button-lg-font-size);
+}
+
+.button-block {
+  display: block;
+  width: 100%;
 }

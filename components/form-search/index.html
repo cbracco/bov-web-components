@@ -11,11 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title, desc -->
-    <title>md-web-components</title>
+    <title>Component: Search Form &bull; md-web-components</title>
     <meta name="description" content="A repository for learning web components with Modern Developer.">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="../../assets/styles/styles.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="./form-search.css">
     <!-- Favicons: http://cbrac.co/11ZzQkJ -->
   </head>
 
@@ -39,42 +41,32 @@
     <div class="main" role="main">
       <section class="main-section">
         <div class="wrapper wrapper-md">
-          <h1>Introduction to CSS</h1>
+          <p class="u-text-center"><a class="backlink" href="../../index.html"><span class="icon">&uarr;</span><br>Back to Home</a></p>
 
-          <p>This chapter, <em>Introduction to CSS</em> will introduce you to the basics of CSS. In it, you will continue to build on the foundation you began to set in the last chapter, <em>HTML Fundamentals</em>. Here, you will begin to see how your programming choices affect the aesthetics of the projects you are working on and how to stylize its different aspects.</p>
-          <h2>Project Assignments</h2>
+          <h1>Project Assignment #4: Creating (Many) Forms and Inputs</h1>
 
-          <div role="navigation">
-            <ul>
-              <li>
-                <a href="./components/button/index.html">Project Assignment #2: Button Web Component</a>
-              </li>
+          <h2>Search Form</h2>
 
-              <li>
-                <a href="./components/card/index.html">Project Assignment #3: Profiles.ModernDeveloper Sidebar</a>
-              </li>
-
-              <li>
-                Project Assignment #4: Creating (Many) Forms and Inputs
-                <ul>
-                  <li>
-                    <a href="./components/form-signup/index.html">Signup Form</a>
-                  </li>
-                  <li>
-                    <a href="./components/form-search/index.html">Search Form</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#!">Project Assignment #5: The Calculator</a>
-              </li>
-
-              <li>
-                <a href="#!">Project Assignment #6: Product Listing Page</a>
-              </li>
-            </ul>
-          </div>
+          <form class="form form-search" action="" method="" role="search">
+            <div class="form-group-bar">
+              <div class="form-group-bar-addon">
+                <div class="form-select-custom">
+                  <select class="form-select" name="searchCategories">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="home_garden">Home & Garden</option>
+                    <option value="health_wellness">Health & Wellness</option>
+                    <option value="sports">Sports</option>
+                  </select>
+                </div>
+              </div>
+              <input class="form-input" type="search" placeholder="Looking for something?">
+              <div class="form-group-bar-addon">
+                <input class="form-submit button" type="submit" value="Search">
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </div>
