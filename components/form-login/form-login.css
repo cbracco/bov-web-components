@@ -1,0 +1,26 @@
+@import url('../form/form.css');
+
+/**
+ * Form: Login ($form-login)
+ */
+
+:root {
+  /* Default */
+  --form-login-padding: var(--spacing-1);
+  --form-login-border: 1px solid var(--color-gray-light);
+  --form-login-border-top: var(--spacing-5) solid var(--color-theme-primary);
+  --form-login-form-legend-font-size: var(--font-size-1);
+  --form-login-form-legend-font-weight: var(--font-weight-1);
+}
+
+.form-login {
+  padding: var(--form-login-padding);
+  border: var(--form-login-border);
+  border-top: var(--form-login-border-top);
+}
+
+.form-login .form-legend {
+  font-size: var(--form-login-form-legend-font-size);
+  font-weight: var(--form-login-form-legend-font-weight);
+  text-align: center;
+}

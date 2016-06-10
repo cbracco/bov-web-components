@@ -1,0 +1,44 @@
+@import url('../variables/variables.css');
+
+/**
+ * Main ($main)
+ */
+
+:root {
+  /* Default */
+  --main-margin: var(--spacing-macro-5);
+  --main-wrapper-heading-margin-top: var(--spacing-em-2);
+  --main-wrapper-heading-margin-bottom: var(--spacing-em-5);
+  --main-wrapper-heading-1-padding: var(--spacing-em-6);
+  --main-wrapper-heading-1-border: 1px solid var(--color-gray-light);
+  --main-wrapper-heading-456-color: var(--color-gray-dark);
+  --main-wrapper-heading-456-letter-spacing: var(--letter-spacing-2);
+}
+
+.main {
+  margin-top: var(--main-margin);
+  margin-bottom: var(--main-margin);
+}
+
+.main-section .wrapper > h1,
+.main-section .wrapper > h2,
+.main-section .wrapper > h3,
+.main-section .wrapper > h4,
+.main-section .wrapper > h5,
+.main-section .wrapper > h6 {
+  margin-top: var(--main-wrapper-heading-margin-top);
+  margin-bottom: var(--main-wrapper-heading-margin-bottom);
+}
+
+.main-section .wrapper > h1 {
+  padding-bottom: var(--main-wrapper-heading-1-padding);
+  border-bottom: var(--main-wrapper-heading-1-border);
+}
+
+.main-section .wrapper > h4,
+.main-section .wrapper > h5,
+.main-section .wrapper > h6 {
+  color: var(--main-wrapper-heading-456-color);
+  text-transform: uppercase;
+  letter-spacing: var(--main-wrapper-heading-456-letter-spacing);
+}

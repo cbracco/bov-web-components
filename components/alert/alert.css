@@ -1,0 +1,33 @@
+@import url('../variables/variables.css');
+
+/**
+ * Alert ($alert)
+ */
+
+:root {
+  /* Default */
+  --alert-padding: var(--spacing-3);
+  --alert-background: var(--color-gray-lighter);
+  --alert-color: var(--color-gray-darkest);
+  --alert-positive-background: var(--color-contextual-positive);
+  --alert-neutral-background: var(--color-contextual-neutral);
+  --alert-negative-background: var(--color-contextual-negative);
+}
+
+.alert {
+  padding: var(--alert-padding);
+  background-color: var(--alert-background);
+  color: var(--alert-color);
+}
+
+.alert-positive {
+  background-color: var(--alert-positive-background);
+}
+
+.alert-neutral {
+  background-color: var(--alert-neutral-background);
+}
+
+.alert-negative {
+  background-color: var(--alert-negative-background);
+}

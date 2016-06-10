@@ -1,0 +1,41 @@
+@import url('../variables/variables.css');
+
+/**
+ * Quote ($quote)
+ */
+
+:root {
+  /* Default */
+  --quote-color: var(--color-gray);
+  --quote-font-family: var(--font-family-2);
+  --quote-font-style: italic;
+  --quote-font-size: var(--font-size-3);
+  --quote-margin: var(--spacing-1);
+  --quote-padding: var(--spacing-1);
+  --quote-border: var(--spacing-5) solid var(--color-gray-light);
+  --quote-paragraph-sibling-margin: var(--spacing-em-1);
+  --quote-cite-before-content: '\2014 \0020';
+}
+
+.quote {
+  color: var(--quote-color);
+  font-family: var(--quote-font-family);
+  font-style: var(--quote-font-style);
+  font-size: var(--quote-font-size);
+  margin-right: 0;
+  margin-left: var(--quote-margin);
+  padding-left: var(--quote-padding);
+  border-left: var(--quote-border);
+}
+
+.quote p {
+  margin: 0;
+}
+
+.quote p + p {
+  margin-top: var(--quote-paragraph-sibling-margin);
+}
+
+.quote cite:before {
+  content: var(--quote-cite-before-content);
+}

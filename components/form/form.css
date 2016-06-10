@@ -1,4 +1,4 @@
-@import url('../../assets/styles/variables.css');
+@import url('../variables/variables.css');
 
 /**
  * Form ($form)
@@ -7,6 +7,7 @@
 
 :root {
   /* Default */
+  --form-fieldset-margin: var(--spacing-2);
   --form-legend-font-weight: var(--font-weight-2);
   --form-legend-color: var(--color-gray-darkest);
   --form-legend-margin: 0 0 var(--spacing-2);
@@ -17,6 +18,7 @@
   --form-input-line-height: 1;
   --form-input-border: 1px solid var(--color-gray-light);
   --form-select-height: 40px;
+  --form-checkbox-radio-margin: var(--spacing-6);
   --form-group-margin: var(--spacing-2);
   --form-group-inline-margin: var(--spacing-5);
 }
@@ -93,6 +95,10 @@
   border: 0;    /* 2 */
 }
 
+.form-fieldset + .form-fieldset {
+  margin-top: var(--form-fieldset-margin);
+}
+
 .form-legend {
   width: 100%;
   border: 0;
@@ -106,8 +112,19 @@
   display: block;
 }
 
-/* Only add spacing if `.form-input` immediately follows `.form-label` */
-.form-label + .form-input {
+.form-label-inline {
+  display: inline-block;
+}
+
+/**
+ * Only add spacing if `.form-input` or `.form-group-inline` immediately follows
+ * `.form-label`.
+ */
+
+.form-label + .form-input,
+.form-label + .form-select,
+.form-label + .form-textarea,
+.form-label + .form-group-inline {
   margin-top: var(--form-input-margin);
 }
 
@@ -131,6 +148,16 @@
 
 .form-select {
   height: var(--form-select-height);
+}
+
+.form-checkbox + .form-checkbox,
+.form-radio + .form-radio {
+  margin-top: var(--form-checkbox-radio-margin);
+}
+
+.form-checkbox-inline,
+.form-radio-inline {
+  display: inline-block;
 }
 
 /**

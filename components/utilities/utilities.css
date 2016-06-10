@@ -1,0 +1,23 @@
+/**
+ * Utilities ($utilities)
+ */
+
+/* Text Alignment */
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+/* Text Truncate */
+.text-truncate {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}

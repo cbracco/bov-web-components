@@ -1,0 +1,24 @@
+@import url('../variables/variables.css');
+
+/**
+ * Footer ($footer)
+ */
+
+:root {
+  /* Default */
+  --footer-margin: var(--spacing-macro-5);
+  --footer-font-size: var(--font-size-5);
+  --footer-wrapper-border: 1px solid var(--color-gray-light);
+  --footer-wrapper-padding: var(--spacing-6);
+}
+
+.footer {
+  margin-top: var(--footer-margin);
+  margin-bottom: var(--footer-margin);
+  font-size: var(--footer-font-size);
+}
+
+.footer .wrapper {
+  border-top: var(--footer-wrapper-border);
+  padding-top: var(--footer-wrapper-padding);
+}

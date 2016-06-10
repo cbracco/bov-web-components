@@ -8,7 +8,7 @@
   --border-radius-circle: 50%;
 
   /* Breakpoints */
-  --breakpoint-xxs: 320px;
+  --breakpoint-xxs: 367px;
   --breakpoint-xs: 480px;
   --breakpoint-sm: 600px;
   --breakpoint-md: 768px;
@@ -97,13 +97,6 @@
   --spacing-em-4: 0.5em;
   --spacing-em-5: 0.333em;
   --spacing-em-6: 0.25em;
-
-  /* Wrappers */
-  --wrapper-width: 92%;
-  --wrapper-max-width: var(--breakpoint-xl);
-  --wrapper-sm-max-width: var(--breakpoint-sm);
-  --wrapper-md-max-width: var(--breakpoint-md);
-  --wrapper-lg-max-width: var(--breakpoint-lg);
 
   /* Z-Index */
   --z-index-1: 100;

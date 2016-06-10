@@ -1,0 +1,33 @@
+@import url('../variables/variables.css');
+
+:root {
+  /* Default */
+  --wrapper-width: 92%;
+  --wrapper-max-width: var(--breakpoint-xl);
+  --wrapper-sm-max-width: var(--breakpoint-sm);
+  --wrapper-md-max-width: var(--breakpoint-md);
+  --wrapper-lg-max-width: var(--breakpoint-lg);
+}
+
+/**
+ * Wrapper ($wrapper)
+ */
+
+.wrapper {
+  width: var(--wrapper-width);
+  max-width: var(--wrapper-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-sm {
+  max-width: var(--wrapper-sm-max-width);
+}
+
+.wrapper-md {
+  max-width: var(--wrapper-md-max-width);
+}
+
+.wrapper-lg {
+  max-width: var(--wrapper-lg-max-width);
+}

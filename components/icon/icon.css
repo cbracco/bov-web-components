@@ -1,0 +1,15 @@
+@import url('../variables/variables.css');
+
+/**
+ * Icon ($icon)
+ */
+
+:root {
+  /* Default */
+
+}
+
+.icon {
+  display: inline-block;
+  text-decoration: none;
+}

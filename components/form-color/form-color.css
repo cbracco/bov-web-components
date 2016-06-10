@@ -1,0 +1,126 @@
+@import url('../form/form.css');
+
+/**
+ * Form: Color ($form-color)
+ */
+
+:root {
+  /* Default */
+  --form-range-margin: var(--spacing-3) 0;
+  --form-range-track-height: var(--spacing-5);
+  --form-range-track-background: var(--color-gray-lighter);
+  --form-range-track-focus-background: var(--color-gray-dark);
+  --form-range-track-border: 1px solid var(--color-gray-light);
+  --form-range-track-border-radius: var(--spacing-5);
+  --form-range-thumb-box-shadow: 0 0 var(--spacing-5) rgba(0, 0, 0, 0.35), 0 0 0 rgba(13, 13, 13, 0.35);
+  --form-range-thumb-border: 1px solid rgba(0, 0, 0, 0.35);
+  --form-range-thumb-width: var(--spacing-2);
+  --form-range-thumb-height: var(--spacing-2);
+  --form-range-thumb-border-radius: 50%;
+  --form-range-thumb-background: var(--color-theme-primary);
+  --form-range-thumb-margin: -6px;
+  --form-range-ms-fill-lower-background: var(--color-gray-lightest);
+  --form-range-ms-fill-lower-focus-background: var(--color-gray-darker);
+  --form-range-ms-fill-lower-border: var(--form-range-track-border);
+  --form-range-ms-fill-upper-background: var(--form-range-track-background);
+  --form-range-ms-fill-upper-focus-background: var(--color-gray-dark);
+  --form-range-ms-fill-upper-border: var(--form-range-track-border);
+  --form-range-ms-fill-upper-border-radius: var(--form-range-track-border-radius);
+  --form-range-ms-thumb-box-shadow: var(--form-range-thumb-box-shadow);
+  --form-range-ms-thumb-border: 1px solid rgba(0, 0, 0, 0.35);
+  --form-range-ms-thumb-border-radius: 50%;
+  --form-range-ms-thumb-width: var(--spacing-1);
+  --form-range-ms-thumb-height: var(--spacing-1);
+  --form-range-ms-thumb-background: var(--color-theme-primary);
+  --form-range-ms-thumb-focus-background: var(--color-gray-darker);
+}
+
+.form-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin: var(--form-range-margin);
+}
+
+.form-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: var(--form-range-track-height);
+  cursor: pointer;
+  background: var(--form-range-track-background);
+  border-radius: var(--form-range-track-border-radius);
+  border: var(--form-range-track-border);
+}
+
+.form-range::-webkit-slider-thumb {
+  box-shadow: var(--form-range-thumb-box-shadow);
+  border: var(--form-range-thumb-border);
+  height: var(--form-range-thumb-height);
+  width: var(--form-range-thumb-width);
+  border-radius: var(--form-range-thumb-border-radius);
+  background: var(--form-range-thumb-background);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: var(--form-range-thumb-margin);
+}
+
+.form-range:focus::-webkit-slider-runnable-track {
+  background: var(--form-range-track-focus-background);
+}
+
+.form-range::-moz-range-track {
+  width: 100%;
+  height: var(--form-range-track-height);
+  cursor: pointer;
+  background: var(--form-range-track-background);
+  border-radius: var(--form-range-track-border-radius);
+  border: var(--form-range-track-border);
+}
+
+.form-range::-moz-range-thumb {
+  box-shadow: var(--form-range-thumb-box-shadow);
+  border: var(--form-range-thumb-border);
+  height: var(--form-range-thumb-height);
+  width: var(--form-range-thumb-width);
+  border-radius: var(--form-range-thumb-border-radius);
+  background: var(--form-range-thumb-background);
+  cursor: pointer;
+}
+
+.form-range::-ms-track {
+  width: 100%;
+  height: var(--form-range-track-height);
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.form-range::-ms-fill-lower {
+  background: var(--form-range-ms-fill-lower-background);
+  border: var(--form-range-ms-fill-lower-border);
+  border-radius: var(--form-range-ms-fill-upper-border);
+}
+
+.form-range::-ms-fill-upper {
+  background: var(--form-range-ms-fill-upper-background);
+  border: var(--form-range-ms-fill-upper-border);
+  border-radius: var(--form-range-ms-fill-upper-border);
+}
+
+.form-range::-ms-thumb {
+  box-shadow: var(--form-range-ms-thumb-box-shadow);
+  border: var(--form-range-ms-thumb-border);
+  height: var(--form-range-ms-thumb-height);
+  width: var(--form-range-ms-thumb-width);
+  border-radius: var(--form-range-ms-thumb-border-radius);
+  background: var(--form-range-ms-thumb-background);
+  cursor: pointer;
+}
+
+.form-range:focus::-ms-fill-lower {
+  background: var(--form-range-ms-fill-lower-focus-background);
+}
+
+.form-range:focus::-ms-fill-upper {
+  background: var(--form-range-ms-fill-upper-focus-background);
+}
