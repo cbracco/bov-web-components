@@ -43,9 +43,10 @@
    * Credit: http://www.flatuicolorpicker.com
    */
   --color-theme-primary: #9b59b6;
+  --color-theme-primary-dark: #8e44ad;
   --color-theme-secondary: #00b16a;
   --color-theme-secondary-dark: #1e824c;
-  --color-theme-tertiary: #f1c40f;
+  --color-theme-tertiary: #4ecdc4;
 
   /* Font Families */
   --font-family-1: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;

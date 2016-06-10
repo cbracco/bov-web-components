@@ -1,0 +1,50 @@
+@import url('../variables/variables.css');
+@import url('../button/button.css');
+
+/**
+ * Calculator ($calculator)
+ */
+
+:root {
+  /* Default */
+  --calculator-max-width: 320px;
+  --calculator-padding: var(--spacing-2);
+  --calculator-background: var(--color-theme-tertiary);
+  --calculator-border-radius: var(--border-radius-1);
+  --calculator-grid-row-sibling-margin: 2.666%;
+  --calculator-screen-line-height: 1;
+  --calculator-screen-background: var(--color-white);
+  --calculator-screen-padding: var(--spacing-3) var(--spacing-2);
+  --calculator-screen-color: var(--color-gray-darkest);
+  --calculator-screen-border-radius: var(--border-radius-1);
+  --calculator-clear-background: var(--color-gray-darker);
+  --calculator-clear-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.calculator {
+  display: block;
+  max-width: var(--calculator-max-width);
+  padding: var(--calculator-padding);
+  background: var(--calculator-background);
+  border-radius: var(--calculator-border-radius);
+}
+
+.calculator .grid-row + .grid-row {
+  margin-top: var(--calculator-grid-row-sibling-margin);
+}
+
+.calculator-key,
+.calculator-screen {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calculator-screen {
+  text-align: right;
+  background-color: var(--calculator-screen-background);
+  line-height: var(--calculator-screen-line-height);
+  padding: var(--calculator-screen-padding);
+  color: var(--calculator-screen-color);
+  border-radius: var(--calculator-screen-border-radius);
+}

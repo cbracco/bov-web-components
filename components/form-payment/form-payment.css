@@ -8,7 +8,7 @@
   /* Default */
   --form-payment-card-background: var(--color-gray-lightest);
   --form-payment-card-border: 1px solid var(--color-gray-light);
-  --form-payment-card-border-radius: var(--spacing-5);
+  --form-payment-card-border-radius: var(--border-radius-1);
   --form-payment-card-padding: var(--spacing-macro-5) var(--spacing-2) var(--spacing-1);
   --form-payment-card-max-width: var(--breakpoint-xxs);
   --form-payment-card-before-height: var(--spacing-macro-6);
