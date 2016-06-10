@@ -25,7 +25,7 @@ a:hover {
 }
 
 a:visited {
-  color: var(--color-theme-primary);
+  color: var(--color-theme-secondary);
 }
 
 h1,

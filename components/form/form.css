@@ -11,7 +11,7 @@
   --form-legend-font-weight: var(--font-weight-2);
   --form-legend-color: var(--color-gray-darkest);
   --form-legend-margin: 0 0 var(--spacing-2);
-  --form-input-color-focus: var(--color-theme-primary);
+  --form-input-color-focus: var(--color-theme-secondary);
   --form-input-margin: var(--spacing-6);
   --form-input-padding: var(--spacing-4) var(--spacing-4);
   --form-input-font-size: var(--font-size-4);

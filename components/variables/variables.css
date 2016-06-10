@@ -42,10 +42,10 @@
    * Colors - Theme
    * Credit: http://www.flatuicolorpicker.com
    */
-  --color-theme-primary: #9b59b6;
-  --color-theme-primary-dark: #8e44ad;
-  --color-theme-secondary: #00b16a;
-  --color-theme-secondary-dark: #1e824c;
+  --color-theme-primary: #00b16a;
+  --color-theme-primary-dark: #1e824c;
+  --color-theme-secondary: #9b59b6;
+  --color-theme-secondary-dark: #8e44ad;
   --color-theme-tertiary: #4ecdc4;
 
   /* Font Families */

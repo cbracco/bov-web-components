@@ -8,7 +8,7 @@
   /* Default */
   --form-signup-padding: var(--spacing-1);
   --form-signup-border: 1px solid var(--color-gray-light);
-  --form-signup-border-top: var(--spacing-5) solid var(--color-theme-primary);
+  --form-signup-border-top: var(--spacing-5) solid var(--color-theme-secondary);
   --form-signup-form-legend-font-size: var(--font-size-1);
   --form-signup-form-legend-font-weight: var(--font-weight-1);
 }

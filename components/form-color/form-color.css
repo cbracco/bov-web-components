@@ -17,7 +17,7 @@
   --form-range-thumb-width: var(--spacing-2);
   --form-range-thumb-height: var(--spacing-2);
   --form-range-thumb-border-radius: 50%;
-  --form-range-thumb-background: var(--color-theme-primary);
+  --form-range-thumb-background: var(--color-theme-secondary);
   --form-range-thumb-margin: -6px;
   --form-range-ms-fill-lower-background: var(--color-gray-lightest);
   --form-range-ms-fill-lower-focus-background: var(--color-gray-darker);
@@ -31,7 +31,7 @@
   --form-range-ms-thumb-border-radius: 50%;
   --form-range-ms-thumb-width: var(--spacing-1);
   --form-range-ms-thumb-height: var(--spacing-1);
-  --form-range-ms-thumb-background: var(--color-theme-primary);
+  --form-range-ms-thumb-background: var(--color-theme-secondary);
   --form-range-ms-thumb-focus-background: var(--color-gray-darker);
 }
 
