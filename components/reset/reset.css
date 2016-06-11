@@ -1,4 +1,7 @@
-@import url('../variables/variables.css');
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ */
 
 /**
  * Reset ($reset)
@@ -17,7 +20,7 @@ body {
 }
 
 a:link {
-  color: var(--color-theme-secondary);
+  color: var(--color-theme-primary);
 }
 
 a:hover {
@@ -60,4 +63,40 @@ h4,
 h5,
 h6 {
   font-size: var(--font-size-4);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**
+ * Suppress the focus outline on links that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ *
+ * It is okay to use `!important` here because we always want this rule to take
+ * precedence.
+ *
+ * @link http://cbrac.co/1Evazku
+ */
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/**
+ * Remove most spacing between table cells.
+ * @link http://cbrac.co/11gtlnj
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
 }

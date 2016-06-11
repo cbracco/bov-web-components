@@ -1,4 +1,8 @@
-@import url('../variables/variables.css');
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ * @import url('../reset/reset.css');
+ */
 
 /**
  * Alert ($alert)
@@ -9,9 +13,9 @@
   --alert-padding: var(--spacing-3);
   --alert-background: var(--color-gray-lighter);
   --alert-color: var(--color-gray-darkest);
-  --alert-positive-background: var(--color-contextual-positive);
-  --alert-neutral-background: var(--color-contextual-neutral);
-  --alert-negative-background: var(--color-contextual-negative);
+  --alert-positive-background: #c8f7c5;
+  --alert-neutral-background: #fde3a7;
+  --alert-negative-background: #f1a9a0;
 }
 
 .alert {

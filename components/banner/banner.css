@@ -1,4 +1,8 @@
-@import url('../variables/variables.css');
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ * @import url('../reset/reset.css');
+ */
 
 /**
  * Banner ($banner)
@@ -38,6 +42,6 @@
 }
 
 .banner-bg-image {
-  background-image: url('../../assets/images/banner-bg-image.jpg');
+  background-image: url('./banner-bg-image.jpg');
   background-repeat: repeat;
 }

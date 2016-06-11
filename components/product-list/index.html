@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ClearType" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title, desc -->
+    <title>Component: Product Listing Page &bull; md-web-components</title>
+    <meta name="description" content="A repository for learning web components with Modern Developer.">
+
+    <!-- Styles: Global -->
+    <link rel="stylesheet" href="../variables/variables.css">
+    <link rel="stylesheet" href="../reset/reset.css">
+    <!-- Styles: Components -->
+    <link rel="stylesheet" href="../alert/alert.css">
+    <link rel="stylesheet" href="../backlink/backlink.css">
+    <link rel="stylesheet" href="../banner/banner.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../form/form.css">
+    <link rel="stylesheet" href="../grid/grid.css">
+    <link rel="stylesheet" href="../icon/icon.css">
+    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="../product/product.css">
+    <link rel="stylesheet" href="../product-list/product-list.css">
+    <link rel="stylesheet" href="../quote/quote.css">
+    <link rel="stylesheet" href="../wrapper/wrapper.css">
+    <link rel="stylesheet" href="../utilities/utilities.css">
+    <!-- Favicons: http://cbrac.co/11ZzQkJ -->
+  </head>
+
+  <body>
+    <!--[if lte IE 8]><div class="alert alert-neutral">It looks like you are using an outdated browser. Please <a href="http://whatbrowser.org">consider upgrading</a> for a faster, better, and safer web experience.</div><![endif]-->
+
+    <div class="banner banner-bg-dark banner-bg-image" role="banner">
+      <div class="wrapper wrapper-md u-text-center">
+        <h1 class="banner-heading">Chris Bracco</h1>
+
+        <h2 class="banner-subheading">Career Path 3: Modern Front-End Developer</h2>
+
+        <blockquote class="banner-quote quote">
+          <p>If I have seen further it is by standing on ye sholders of Giants.</p>
+
+          <cite><a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">Issac Newton</a></cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="main" role="main">
+      <section class="main-section">
+        <div class="wrapper wrapper-md">
+          <p class="u-text-center"><a class="backlink" href="../../index.html"><span class="icon">&larr;</span><br>Back to Home</a></p>
+
+          <h1>Project Assignment #6: Product Listing Page</h1>
+
+          <p>For Project Assignment 6 you will create a basic product listing page with a shopping cart at the bottom of the page. The product listing should display at least 10 different products with an Add to Cart button next to each. The shopping cart should display at least 3 products in the cart.</p>
+        </div>
+      </section>
+      <section class="main-section">
+        <div class="wrapper">
+          <h2>Browse Products</h2>
+
+          <ul class="product-list">
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product Name" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product Name">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product Name">Product Name</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product With a Longer Name That Likely Spans a Few More Lines">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines">Product With a Longer Name That Likely Spans a Few More Lines</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product Name" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product Name">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product Name">Product Name</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product With a Longer Name That Likely Spans a Few More Lines">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines">Product With a Longer Name That Likely Spans a Few More Lines</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product With a Longer Name That Likely Spans a Few More Lines">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines">Product With a Longer Name That Likely Spans a Few More Lines</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product Name" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product Name">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product Name">Product Name</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product With a Longer Name That Likely Spans a Few More Lines">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines">Product With a Longer Name That Likely Spans a Few More Lines</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="product-list-item u-width-12 xs-u-width-6 md-u-width-4 xl-u-width-3">
+              <div class="product">
+                <a class="product-image" href="#!" title="Product Name" aria-hidden="true">
+                  <img src="http://lorempixel.com/640/480/technics/" alt="Product Name">
+                </a>
+                <h3 class="product-heading"><a href="#!" title="Product Name">Product Name</a></h3>
+                <div class="product-price">
+                  <div class="product-price-original u-text-deleted">$9999.99</div>
+                  <div class="product-price-current u-color-primary u-font-bold">$999.99</div>
+                </div>
+                <div class="product-actions">
+                  <button class="button button-quaternary button-rounded js-add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <h2>Your Shopping Cart</h2>
+
+          <div class="product-cart u-momentum-scrolling">
+            <table class="product-cart-table u-width-12">
+              <thead class="product-cart-table-header">
+                <th class="product-cart-table-heading u-text-left" colspan="2">Name</th>
+                <th class="product-cart-table-heading u-text-right">Quantity</th>
+                <th class="product-cart-table-heading u-text-right">Price</th>
+              </thead>
+              <tbody class="product-cart-table-body">
+                <tr class="product-cart-item product-cart-table-row">
+                  <td class="product-cart-item-image product-cart-table-cell u-text-left">
+                    <a href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines" aria-hidden="true">
+                      <img src="http://lorempixel.com/160/160/technics/" alt="Product With a Longer Name That Likely Spans a Few More Lines">
+                    </a>
+                  </td>
+                  <td class="product-cart-item-heading product-cart-table-cell u-text-left">
+                    <h4>
+                      <a href="#!" title="Product With a Longer Name That Likely Spans a Few More Lines">Product With a Longer Name That Likely Spans a Few More Lines</a>
+                    </h4>
+                    <div class="product-cart-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ad nesciunt aut impedit. Dicta quibusdam deserunt inventore quisquam dolorum delectus deleniti consectetur quis aperiam, nam odit, laboriosam ducimus! Incidunt, ea&hellip;</div>
+                  </td>
+                  <td class="product-cart-item-quantity product-cart-table-cell u-text-right">
+                    <input class="form-input js-product-cart-item-quantity" type="number" name="productCartItemQuantity" id="productCartItemQuantity" value="1">
+                  </td>
+                  <td class="product-cart-item-price product-cart-table-cell u-text-right">
+                    <div class="product-cart-item-price-original u-text-deleted">$9999.99</div>
+                    <div class="product-cart-item-price-reduced u-color-primary u-font-bold">$999.99</div>
+                  </td>
+                  <td class="product-cart-item-remove product-cart-table-cell u-text-right">
+                    <button class="button button-negative button-sm button-rounded">Remove</button>
+                  </td>
+                </tr>
+                <tr class="product-cart-item product-cart-table-row">
+                  <td class="product-cart-item-image product-cart-table-cell u-text-left">
+                    <a href="#!" title="Product Name" aria-hidden="true">
+                      <img src="http://lorempixel.com/160/160/technics/" alt="Product Name">
+                    </a>
+                  </td>
+                  <td class="product-cart-item-heading product-cart-table-cell u-text-left">
+                    <h4>
+                      <a href="#!" title="Product Name">Product Name</a>
+                    </h4>
+                    <div class="product-cart-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ad nesciunt aut impedit. Dicta quibusdam deserunt inventore quisquam dolorum delectus deleniti consectetur quis aperiam, nam odit, laboriosam ducimus! Incidunt, ea&hellip;</div>
+                  </td>
+                  <td class="product-cart-item-quantity product-cart-table-cell u-text-right">
+                    <input class="form-input js-product-cart-item-quantity" type="number" name="productCartItemQuantity" id="productCartItemQuantity" value="1">
+                  </td>
+                  <td class="product-cart-item-price product-cart-table-cell u-text-right">
+                    <div class="product-cart-item-price-original u-text-deleted">$9999.99</div>
+                    <div class="product-cart-item-price-reduced u-color-primary u-font-bold">$999.99</div>
+                  </td>
+                  <td class="product-cart-item-remove product-cart-table-cell u-text-right">
+                    <button class="button button-negative button-sm button-rounded">Remove</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="grid">
+            <div class="grid-row">
+              <div class="grid-col md-u-width-6">
+                <div class="product-cart-code">
+                  <h3 class="product-cart-code-heading">Add a Promotional Code</h3>
+                  <div class="form-group">
+                    <input class="form-input" type="text" name="cartPromoCode" id="cartPromoCode" placeholder="Enter your code" aria-label="Promotional Code">
+                  </div>
+                  <div class="form-group">
+                    <button class="button button-quaternary button-sm button-rounded">Add Code</button>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-col md-u-width-6">
+                <div class="product-cart-summary u-momentum-scrolling">
+                  <h3 class="product-cart-summary-heading">Order Summary</h3>
+                  <table class="product-cart-summary-table u-width-12">
+                    <tr class="product-cart-summary-subtotal product-cart-summary-table-row">
+                      <td class="product-cart-summary-table-cell">Items Subtotal:</td>
+                      <td class="product-cart-summary-table-cell u-text-right">$1999.98</td>
+                    </tr>
+                    <tr class="product-cart-summary-code product-cart-summary-table-row">
+                      <td class="product-cart-summary-table-cell u-font-bold u-color-quaternary">Promo Code (15OFFNOW):</td>
+                      <td class="product-cart-summary-table-cell u-text-right u-font-bold u-color-quaternary">-$300.00</td>
+                    </tr>
+                    <tr class="product-cart-summary-shipping product-cart-summary-table-row">
+                      <td class="product-cart-summary-table-cell">Shipping & Handling:</td>
+                      <td class="product-cart-summary-table-cell u-text-right">$0.00</td>
+                    </tr>
+                    <tr class="product-cart-summary-total product-cart-summary-table-row">
+                      <td class="product-cart-summary-table-cell u-font-bold u-color-gray-darkest">Order Total:</td>
+                      <td class="product-cart-summary-table-cell u-text-right u-color-primary u-font-bold">$1699.98</td>
+                    </tr>
+                  </table>
+                  <div class="product-cart-summary-actions u-text-right">
+                    <a class="button button-rounded" href="#!">Keep Shopping</a>
+                    <a class="button button-primary button-rounded" href="#!">Continue to Checkout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer" role="contentinfo">
+      <div class="wrapper wrapper-md u-text-center">
+        <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
+      </div>
+    </div>
+  </body>
+</html>

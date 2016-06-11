@@ -1,4 +1,9 @@
-@import url('../form/form.css');
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ * @import url('../reset/reset.css');
+ * @import url('../form/form.css');
+ */
 
 /**
  * Form: Payment ($form-payment)

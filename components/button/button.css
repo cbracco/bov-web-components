@@ -1,4 +1,8 @@
-@import url('../variables/variables.css');
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ * @import url('../reset/reset.css');
+ */
 
 /**
  * Button ($button)
@@ -22,9 +26,27 @@
   --button-secondary-background: var(--color-theme-secondary);
   --button-secondary-hover-background: var(--color-theme-secondary-dark);
   --button-secondary-color: var(--color-white);
+  --button-tertiary-background: var(--color-theme-tertiary);
+  --button-tertiary-hover-background: var(--color-theme-tertiary-dark);
+  --button-tertiary-color: var(--color-white);
+  --button-quaternary-background: var(--color-theme-quaternary);
+  --button-quaternary-hover-background: var(--color-theme-quaternary-dark);
+  --button-quaternary-color: var(--color-gray-darkest);
+  --button-quinary-background: var(--color-theme-quinary);
+  --button-quinary-hover-background: var(--color-theme-quinary-dark);
+  --button-quinary-color: var(--color-white);
   --button-gray-dark-background: var(--color-gray-dark);
   --button-gray-dark-color: var(--color-white);
   --button-gray-dark-hover-background: var(--color-gray-darker);
+  --button-positive-background: var(--color-contextual-positive);
+  --button-positive-color: var(--color-white);
+  --button-positive-hover-background: var(--color-contextual-positive-dark);
+  --button-neutral-background: var(--color-contextual-neutral);
+  --button-neutral-color: var(--color-white);
+  --button-neutral-hover-background: var(--color-contextual-neutral-dark);
+  --button-negative-background: var(--color-contextual-negative);
+  --button-negative-color: var(--color-white);
+  --button-negative-hover-background: var(--color-contextual-negative-dark);
 
   /* Sizes */
   --button-sm-padding: var(--spacing-5) var(--spacing-4);
@@ -69,7 +91,9 @@
  * Button: Colors
  */
 
-.button-gray-dark {
+.button-gray-dark,
+.button-gray-dark:link,
+.button-gray-dark:visited {
   background: var(--button-gray-dark-background);
   color: var(--button-gray-dark-color);
 }
@@ -79,7 +103,9 @@
   background: var(--button-gray-dark-hover-background);
 }
 
-.button-primary {
+.button-primary,
+.button-primary:link,
+.button-primary:visited {
   background: var(--button-primary-background);
   color: var(--button-primary-color);
 }
@@ -89,7 +115,9 @@
   background: var(--button-primary-hover-background);
 }
 
-.button-secondary {
+.button-secondary,
+.button-secondary:link,
+.button-secondary:visited {
   background: var(--button-secondary-background);
   color: var(--button-secondary-color);
 }
@@ -97,6 +125,78 @@
 .button-secondary:hover,
 .button-secondary:focus {
   background: var(--button-secondary-hover-background);
+}
+
+.button-tertiary,
+.button-tertiary:link,
+.button-tertiary:visited {
+  background: var(--button-tertiary-background);
+  color: var(--button-tertiary-color);
+}
+
+.button-tertiary:hover,
+.button-tertiary:focus {
+  background: var(--button-tertiary-hover-background);
+}
+
+.button-quaternary,
+.button-quaternary:link,
+.button-quaternary:visited {
+  background: var(--button-quaternary-background);
+  color: var(--button-quaternary-color);
+}
+
+.button-quaternary:hover,
+.button-quaternary:focus {
+  background: var(--button-quaternary-hover-background);
+}
+
+.button-quinary,
+.button-quinary:link,
+.button-quinary:visited {
+  background: var(--button-quinary-background);
+  color: var(--button-quinary-color);
+}
+
+.button-quinary:hover,
+.button-quinary:focus {
+  background: var(--button-quinary-hover-background);
+}
+
+.button-positive,
+.button-positive:link,
+.button-positive:visited {
+  background: var(--button-positive-background);
+  color: var(--button-positive-color);
+}
+
+.button-positive:hover,
+.button-positive:focus {
+  background: var(--button-positive-hover-background);
+}
+
+.button-neutral,
+.button-neutral:link,
+.button-neutral:visited {
+  background: var(--button-neutral-background);
+  color: var(--button-neutral-color);
+}
+
+.button-neutral:hover,
+.button-neutral:focus {
+  background: var(--button-neutral-hover-background);
+}
+
+.button-negative,
+.button-negative:link,
+.button-negative:visited {
+  background: var(--button-negative-background);
+  color: var(--button-negative-color);
+}
+
+.button-negative:hover,
+.button-negative:focus {
+  background: var(--button-negative-hover-background);
 }
 
 /**

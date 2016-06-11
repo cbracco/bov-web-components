@@ -34,9 +34,12 @@
    * Colors - Contextual
    * Credit: http://www.flatuicolorpicker.com
    */
-  --color-contextual-positive: #c8f7c5;
-  --color-contextual-neutral: #fde3a7;
-  --color-contextual-negative: #f1a9a0;
+  --color-contextual-positive: #26a65b;
+  --color-contextual-positive-dark: #1e824c;
+  --color-contextual-neutral: #f5ab35;
+  --color-contextual-neutral-dark: #f39c12;
+  --color-contextual-negative: #f22613;
+  --color-contextual-negative-dark: #d91e18;
 
   /**
    * Colors - Theme
@@ -47,6 +50,10 @@
   --color-theme-secondary: #9b59b6;
   --color-theme-secondary-dark: #8e44ad;
   --color-theme-tertiary: #4ecdc4;
+  --color-theme-quaternary: #f9bf3b;
+  --color-theme-quaternary-dark: #f5ab35;
+  --color-theme-quinary: #4183d7;
+  --color-theme-quinary-dark: #446Cb3;
 
   /* Font Families */
   --font-family-1: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;

@@ -14,9 +14,23 @@
     <title>Component: The Calculator &bull; md-web-components</title>
     <meta name="description" content="A repository for learning web components with Modern Developer.">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="../../assets/styles/styles.css">
-    <link rel="stylesheet" href="./calculator.css">
+    <!-- Styles: Global -->
+    <link rel="stylesheet" href="../variables/variables.css">
+    <link rel="stylesheet" href="../reset/reset.css">
+    <!-- Styles: Components -->
+    <link rel="stylesheet" href="../alert/alert.css">
+    <link rel="stylesheet" href="../backlink/backlink.css">
+    <link rel="stylesheet" href="../banner/banner.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="../calculator/calculator.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../form/form.css">
+    <link rel="stylesheet" href="../grid/grid.css">
+    <link rel="stylesheet" href="../icon/icon.css">
+    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="../quote/quote.css">
+    <link rel="stylesheet" href="../wrapper/wrapper.css">
+    <link rel="stylesheet" href="../utilities/utilities.css">
     <!-- Favicons: http://cbrac.co/11ZzQkJ -->
   </head>
 
@@ -40,7 +54,7 @@
     <div class="main" role="main">
       <section class="main-section">
         <div class="wrapper wrapper-md">
-          <p class="u-text-center"><a class="backlink" href="../../index.html"><span class="icon">&uarr;</span><br>Back to Home</a></p>
+          <p class="u-text-center"><a class="backlink" href="../../index.html"><span class="icon">&larr;</span><br>Back to Home</a></p>
 
           <h1>Project Assignment #5: The Calculator</h1>
 
@@ -49,67 +63,67 @@
           <div class="calculator">
             <div class="grid">
               <div class="grid-row">
-                <div class="grid-col grid-col-3">
-                  <button class="calculator-key calculator-clear button button-rounded button-chunky button-primary js-calculator-clear">Clear</button>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-clear button button-rounded button-chunky button-secondary js-calculator-clear">Clear</button>
                 </div>
-                <div class="grid-col grid-col-9">
-                  <div class="calculator-screen js-calculator-screen text-truncate">0</div>
+                <div class="grid-col u-width-9">
+                  <div class="calculator-screen js-calculator-screen u-text-truncate">0</div>
                 </div>
               </div>
               <div class="grid-row">
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">7</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">8</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">9</button>
                 </div>
-                <div class="grid-col grid-col-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-primary js-calculator-add">+</button>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-add">+</button>
                 </div>
               </div>
               <div class="grid-row">
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">4</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">5</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">6</button>
                 </div>
-                <div class="grid-col grid-col-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-primary js-calculator-subtract">-</button>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-subtract">-</button>
                 </div>
               </div>
               <div class="grid-row">
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">1</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">2</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">3</button>
                 </div>
-                <div class="grid-col grid-col-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-primary js-calculator-divide">&divide;</button>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-divide">&divide;</button>
                 </div>
               </div>
               <div class="grid-row">
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">0</button>
                 </div>
-                <div class="grid-col grid-col-3">
+                <div class="grid-col u-width-3">
                   <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral js-calculator-decimal">.</button>
                 </div>
-                <div class="grid-col grid-col-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-primary js-calculator-equals">=</button>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-equals">=</button>
                 </div>
-                <div class="grid-col grid-col-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-primary js-calculator-multiply">&times;</button>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-multiply">&times;</button>
                 </div>
               </div>
             </div>

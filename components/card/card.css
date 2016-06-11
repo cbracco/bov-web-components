@@ -1,4 +1,8 @@
-@import url('../variables/variables.css');
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ * @import url('../reset/reset.css');
+ */
 
 /**
  * Card ($card)
@@ -38,9 +42,6 @@
 }
 
 .card-image img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
   border: var(--card-image-img-border);
   border-radius: var(--card-image-img-border-radius);
 }
