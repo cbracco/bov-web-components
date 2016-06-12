@@ -14,9 +14,14 @@ html {
   color: var(--color-gray-darker);
 }
 
-/* Remove default margin */
+/**
+ * 1. Remove the default margin.
+ * 2. Force scrollbars on all pages.
+ */
+
 body {
-  margin: 0;
+  margin: 0; /* 1 */
+  overflow-y: scroll; /* 2 */
 }
 
 a:link {

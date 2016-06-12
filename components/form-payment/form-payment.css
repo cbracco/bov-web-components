@@ -18,6 +18,7 @@
   --form-payment-card-max-width: var(--breakpoint-xxs);
   --form-payment-card-before-height: var(--spacing-macro-6);
   --form-payment-card-before-background: var(--color-gray-dark);
+  --form-payment-grid-row-sibling-margin: var(--spacing-2);
 }
 
 .form-payment-card {
