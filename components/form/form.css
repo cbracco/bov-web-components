@@ -25,6 +25,8 @@
   --form-checkbox-radio-margin: var(--spacing-6);
   --form-group-margin: var(--spacing-2);
   --form-group-inline-margin: var(--spacing-5);
+  --form-input-valid-color: var(--color-contextual-positive);
+  --form-input-invalid-color: var(--color-contextual-negative);
 }
 
 /**
@@ -215,4 +217,17 @@
   .form-select {
     height: 42px;
   }
+}
+
+/* Validation */
+.form-input.is-valid,
+.form-select.is-valid,
+.form-textarea.is-valid {
+  border-color: var(--form-input-valid-color);
+}
+
+.form-input.is-invalid,
+.form-select.is-invalid,
+.form-textarea.is-invalid {
+  border-color: var(--form-input-invalid-color);
 }
