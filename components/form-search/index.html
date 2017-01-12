@@ -60,7 +60,7 @@
 
           <h2>Search Form</h2>
 
-          <form class="form form-search" action="" method="" role="search">
+          <form class="form form-search" id="js-form-search" action="" method="" role="search">
             <div class="form-group-bar">
               <div class="form-group-bar-addon">
                 <label class="form-select-custom">
@@ -74,7 +74,7 @@
                   </select>
                 </label>
               </div>
-              <input class="form-input" type="search" placeholder="Looking for something?">
+              <input class="form-input" id="searchTerms" type="search" placeholder="Looking for something?">
               <div class="form-group-bar-addon">
                 <input class="form-submit button button-primary" type="submit" value="Search">
               </div>
@@ -89,5 +89,9 @@
         <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="../../scripts/validator.js"></script>
+    <script src="./form-search.js"></script>
   </body>
 </html>

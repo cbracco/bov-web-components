@@ -61,7 +61,7 @@
 
           <h2>Credit / Debit Card Form</h2>
 
-          <form class="form form-payment" action="" method="">
+          <form class="form form-payment" id="js-form-payment" action="" method="">
             <fieldset class="form-fieldset">
               <legend class="form-legend">Credit / Debit Card Information</legend>
 
@@ -71,13 +71,13 @@
                     <div class="grid-col u-width-9">
                       <label class="form-label u-text-truncate" for="paymentCardNumber">Card Number</label>
 
-                      <input class="form-input" type="text" id="paymentCardNumber" name="paymentCardNumber" placeholder="&times;&times;&times;&times; &times;&times;&times;&times; &times;&times;&times;&times; &times;&times;&times;&times;" required>
+                      <input class="form-input" type="text" id="paymentCardNumber" name="paymentCardNumber" placeholder="&times;&times;&times;&times; &times;&times;&times;&times; &times;&times;&times;&times; &times;&times;&times;&times;">
                     </div>
 
                     <div class="grid-col u-width-3">
                       <label for="paymentCardCode" class="form-label u-text-truncate">Sec. Code</label>
 
-                      <input class="form-input" type="text" id="paymentCardCode" name="paymentCardCode" maxlength="4" placeholder="&times;&times;&times;&times;" aria-label="Security Code" required>
+                      <input class="form-input" type="text" id="paymentCardCode" name="paymentCardCode" maxlength="4" placeholder="&times;&times;&times;&times;" aria-label="Security Code">
                     </div>
                   </div>
 
@@ -85,14 +85,14 @@
                     <div class="grid-col u-width-5">
                       <label class="form-label u-text-truncate" for="paymentCardName">Cardholder Name</label>
 
-                      <input class="form-input" type="text" id="paymentCardName" name="paymentCardName" placeholder="Jane Dough" required>
+                      <input class="form-input" type="text" id="paymentCardName" name="paymentCardName" placeholder="Jane Dough">
                     </div>
 
                     <div class="grid-col u-width-7">
                       <label for="paymentCardExpirationMonth" class="form-label u-text-truncate">Exp. Date</label>
 
                       <div class="form-group-inline">
-                        <select class="form-select" id="paymentCardExpirationMonth" name="paymentCardExpirationMonth" aria-label="Expiration Date Month" required>
+                        <select class="form-select" id="paymentCardExpirationMonth" name="paymentCardExpirationMonth" aria-label="Expiration Date Month">
                           <option>MM</option>
                           <option value="01">01</option>
                           <option value="02">02</option>
@@ -106,7 +106,7 @@
                           <option value="10">10</option>
                           <option value="11">11</option>
                           <option value="12">12</option>
-                        </select>/ <select class="form-select" id="paymentCardExpirationYear" name="paymentCardExpirationYear" aria-label="Expiration Date Year" required>
+                        </select>/ <select class="form-select" id="paymentCardExpirationYear" name="paymentCardExpirationYear" aria-label="Expiration Date Year">
                           <option>YYYY</option>
                           <option value="2016">2016</option>
                           <option value="2015">2015</option>
@@ -246,5 +246,9 @@
         <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="../../scripts/validator.js"></script>
+    <script src="./form-payment.js"></script>
   </body>
 </html>

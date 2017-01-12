@@ -95,7 +95,11 @@
 }
 
 .form-group-bar .form-input:focus,
-.form-group-bar .form-select:focus {
+.form-group-bar .form-select:focus,
+.form-group-bar .form-input.is-valid,
+.form-group-bar .form-input.is-invalid,
+.form-group-bar .form-select.is-valid,
+.form-group-bar .form-select.is-invalid {
   position: relative;
   z-index: var(--form-group-bar-addon-focus-z-index);
 }

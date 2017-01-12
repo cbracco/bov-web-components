@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../alert/alert.css">
     <link rel="stylesheet" href="../backlink/backlink.css">
     <link rel="stylesheet" href="../banner/banner.css">
+    <link rel="stylesheet" href="../button/button.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="../form/form.css">
     <link rel="stylesheet" href="../form-color/form-color.css">
@@ -59,32 +60,35 @@
 
           <h2>Color Form</h2>
 
-          <form class="form form-color" action="" method="">
+          <form class="form form-color" id="js-form-color" action="" method="">
             <fieldset class="form-fieldset">
               <legend class="form-legend">Generate a Color</legend>
               <div class="form-group">
                 <label for="colorR" class="form-label">Red</label>
-                <input class="form-input form-range" id="colorR" name="colorR" type="range" min="0" max="255" step="5">
+                <input class="form-input form-range" id="colorR" name="colorRGBA" type="range" min="0" max="255" step="1" value="0">
               </div>
 
               <div class="form-group">
-                <label for="colorg" class="form-label">Green</label>
-                <input class="form-input form-range" id="colorg" name="colorR" type="range" min="0" max="255" step="5">
+                <label for="colorG" class="form-label">Green</label>
+                <input class="form-input form-range" id="colorG" name="colorRGBA" type="range" min="0" max="255" step="1" value="0">
               </div>
 
               <div class="form-group">
                 <label for="colorB" class="form-label">Blue</label>
-                <input class="form-input form-range" id="colorB" name="colorR" type="range" min="0" max="255" step="5">
+                <input class="form-input form-range" id="colorB" name="colorRGBA" type="range" min="0" max="255" step="1" value="0">
               </div>
 
               <div class="form-group">
                 <label for="colorA" class="form-label">Alpha</label>
-                <input class="form-input form-range" id="colorA" name="colorR" type="range" min="0" max="1" step="0.01">
+                <input class="form-input form-range" id="colorA" name="colorRGBA" type="range" min="0" max="1" step="0.01" value="0">
               </div>
 
               <div class="form-group">
                 <label for="colorGenerated" class="form-label">Your Color</label>
                 <input type="text" id="colorGenerated" name="colorGenerated" class="form-input" placeholder="e.g. #000000">
+              </div>
+              <div class="form-group">
+                <input class="form-submit button button-primary" type="submit" value="Save Color">
               </div>
             </fieldset>
           </form>
@@ -97,5 +101,9 @@
         <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="../../scripts/validator.js"></script>
+    <script src="./form-color.js"></script>
   </body>
 </html>

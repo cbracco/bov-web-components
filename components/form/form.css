@@ -220,6 +220,14 @@
 }
 
 /* Validation */
+.form-label.is-valid {
+  color: var(--form-input-valid-color);
+}
+
+.form-label.is-invalid {
+  color: var(--form-input-invalid-color);
+}
+
 .form-input.is-valid,
 .form-select.is-valid,
 .form-textarea.is-valid {

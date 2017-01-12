@@ -61,20 +61,20 @@
 
           <h2>Login Form</h2>
 
-          <form class="form form-login" action="" method="">
+          <form class="form form-login" id="js-form-login" action="" method="">
             <fieldset class="form-fieldset">
               <legend class="form-legend">Login to Your Account</legend>
 
               <div class="form-group">
                 <label class="form-label" for="loginEmailAddress">Email Address</label>
 
-                <input class="form-input" id="loginEmailAddress" name="loginEmailAddress" type="email" placeholder="jane@dough.com" required>
+                <input class="form-input" id="loginEmailAddress" name="loginEmailAddress" type="email" placeholder="jane@dough.com">
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="loginPassword">Password</label>
 
-                <input class="form-input" id="loginPassword" name="loginPassword" type="password" placeholder="Make it strong!" required>
+                <input class="form-input" id="loginPassword" name="loginPassword" type="password" placeholder="Make it strong!">
               </div>
 
               <div class="form-group">
@@ -98,5 +98,9 @@
         <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="../../scripts/validator.js"></script>
+    <script src="./form-login.js"></script>
   </body>
 </html>
