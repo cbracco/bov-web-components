@@ -61,70 +61,73 @@
 
           <p>Create a calculator that has buttons corresponding to 0—9, addition, subtraction, multiplication, division, and a equals sign button. Ideally, you would find a cool calculator app on your mobile phone and try to replicate the design; you can skip any 3d shadows and complex gradients.</p>
 
-          <div class="calculator">
+          <div class="calculator js-calculator">
             <div class="grid">
               <div class="grid-row">
                 <div class="grid-col u-width-3">
                   <button class="calculator-key calculator-clear button button-rounded button-chunky button-secondary js-calculator-clear">Clear</button>
                 </div>
-                <div class="grid-col u-width-9">
-                  <div class="calculator-screen js-calculator-screen u-text-truncate">0</div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-delete button button-rounded button-chunky button-secondary js-calculator-delete">Del</button>
+                </div>
+                <div class="grid-col u-width-6">
+                  <div id="js-calculator-screen" class="calculator-screen u-text-truncate">0</div>
                 </div>
               </div>
               <div class="grid-row">
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">7</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">7</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">8</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">8</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">9</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">9</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-add">+</button>
-                </div>
-              </div>
-              <div class="grid-row">
-                <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">4</button>
-                </div>
-                <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">5</button>
-                </div>
-                <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">6</button>
-                </div>
-                <div class="grid-col u-width-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-subtract">-</button>
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">+</button>
                 </div>
               </div>
               <div class="grid-row">
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">1</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">4</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">2</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">5</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">3</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">6</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-divide">&divide;</button>
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">-</button>
                 </div>
               </div>
               <div class="grid-row">
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral">0</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">1</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-numeral js-calculator-decimal">.</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">2</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-equals">=</button>
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">3</button>
                 </div>
                 <div class="grid-col u-width-3">
-                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-multiply">&times;</button>
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">/</button>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">0</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number js-calculator-decimal">.</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-eval">=</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">*</button>
                 </div>
               </div>
             </div>
@@ -139,4 +142,7 @@
       </div>
     </div>
   </body>
+
+  <!-- Scripts -->
+  <script src="./calculator.js"></script>
 </html>
