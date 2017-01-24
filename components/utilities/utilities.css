@@ -133,6 +133,11 @@
   color: var(--color-gray) !important;
 }
 
+/* Visibility */
+.u-hidden {
+  display: none;
+}
+
 /* Width */
 .u-width-1  { width: 8.333%;  }
 .u-width-2  { width: 16.666%; }
