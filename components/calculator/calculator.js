@@ -1,4 +1,4 @@
-// Cache elements
+// Define public variables
 var calcScreen = document.getElementById('js-calculator-screen'),
     calcNumber = '.js-calculator-number',
     calcSymbol = '.js-calculator-symbol',
