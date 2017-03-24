@@ -1,5 +1,5 @@
 {
-  "name": "md-web-components",
+  "name": "bov-web-components",
   "version": "0.0.1",
   "description": "A repository for learning web components with Modern Developer.",
   "main": "index.html",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cbracco/md-web-components.git"
+    "url": "git+https://github.com/cbracco/bov-web-components.git"
   },
   "author": "Chris Bracco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cbracco/md-web-components/issues"
+    "url": "https://github.com/cbracco/bov-web-components/issues"
   },
-  "homepage": "https://github.com/cbracco/md-web-components#readme"
+  "homepage": "https://github.com/cbracco/bov-web-components#readme"
 }
