@@ -42,7 +42,6 @@
 }
 
 .card-image img {
-  border: var(--card-image-img-border);
   border-radius: var(--card-image-img-border-radius);
 }
 

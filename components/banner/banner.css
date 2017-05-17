@@ -11,6 +11,7 @@
 :root {
   /* Default */
   --banner-padding: var(--spacing-macro-2);
+  --banner-bg-dark-background-color: var(--color-theme-secondary);
   --banner-bg-dark-color: var(--color-white);
 }
 
@@ -29,6 +30,10 @@
   padding-left: 0;
 }
 
+.banner-bg-dark {
+  background-color: var(--banner-bg-dark-background-color);
+}
+
 .banner-bg-dark,
 .banner-bg-dark h1,
 .banner-bg-dark h2,
@@ -42,6 +47,5 @@
 }
 
 .banner-bg-image {
-  background-image: url('./banner-bg-image.jpg');
   background-repeat: repeat;
 }
