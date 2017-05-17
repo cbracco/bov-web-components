@@ -1,0 +1,70 @@
+/**
+ * Dependencies
+ * @import url('../variables/variables.css');
+ * @import url('../reset/reset.css');
+ */
+
+/**
+ * Card ($card)
+ */
+
+:root {
+  /* Default */
+  --card-padding: var(--spacing-1);
+  --card-background-color: var(--color-white);
+  --card-border: 1px solid var(--color-gray-light);
+  --card-border-radius: var(--border-radius-1);
+  --card-box-shadow: 0 0 var(--spacing-1) rgba(0, 0, 0, 0.08);
+  --card-image-margin: 0 auto var(--spacing-1) auto;
+  --card-image-img-border-radius: var(--border-radius-circle);
+  --card-heading-font-size: var(--font-size-1);
+  --card-heading-margin: 0 0 var(--spacing-1);
+  --card-content-border: 1px solid var(--color-gray-light);
+  --card-content-padding: var(--spacing-4) 0 0;
+  --card-content-children-margin: var(--spacing-3);
+}
+
+.card {
+  display: block;
+  padding: var(--card-padding);
+  background-color: var(--card-background-color);
+  border: var(--card-border);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+}
+
+.card-image {
+  text-align: center;
+  width: 40%;
+  margin: var(--card-image-margin);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-image img {
+  border-radius: var(--card-image-img-border-radius);
+}
+
+.card-heading {
+  font-size: var(--card-heading-font-size);
+  margin: var(--card-heading-margin);
+  text-align: center;
+}
+
+/* Only apply these styles if `.card-content` follows `.card-heading` */
+.card-heading + .card-content {
+  border-top: var(--card-content-border);
+  padding: var(--card-content-padding);
+}
+
+.card-content > * {
+  margin-bottom: 0;
+}
+
+/**
+ * Lobotomized Owl Selector!
+ * Credit: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ */
+.card-content > * + * {
+  margin-top: var(--card-content-children-margin);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ClearType" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title, desc -->
+    <title>Component: Login Form &bull; bov-web-components</title>
+    <meta name="description" content="A repository for learning web components with Modern Developer.">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../assets/styles/main.min.css">
+    <!-- Favicons: http://cbrac.co/11ZzQkJ -->
+  </head>
+
+  <body>
+    <!--[if lte IE 8]><div class="alert alert-neutral">It looks like you are using an outdated browser. Please <a href="http://whatbrowser.org">consider upgrading</a> for a faster, better, and safer web experience.</div><![endif]-->
+
+    <div class="banner banner-bg-dark banner-bg-image" role="banner">
+      <div class="wrapper wrapper-md u-text-center">
+        <h1 class="banner-heading">Chris Bracco</h1>
+
+        <h2 class="banner-subheading">Career Path 3: Modern Front-End Developer</h2>
+
+        <blockquote class="banner-quote quote">
+          <p>If I have seen further it is by standing on ye sholders of Giants.</p>
+
+          <cite><a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">Issac Newton</a></cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="main" role="main">
+      <section class="main-section">
+        <div class="wrapper wrapper-md">
+          <p class="u-text-center"><a class="backlink" href="../../index.html"><span class="icon">&larr;</span><br>Back to Home</a></p>
+
+          <h1>Project Assignment #4: Creating (Many) Forms and Inputs</h1>
+
+          <h2>Login Form</h2>
+
+          <form class="form form-login" id="js-form-login" action="" method="">
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">Login to Your Account</legend>
+
+              <div class="form-group">
+                <label class="form-label" for="loginEmailAddress">Email Address</label>
+
+                <input class="form-input" id="loginEmailAddress" name="loginEmailAddress" type="email" placeholder="jane@dough.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="loginPassword">Password</label>
+
+                <input class="form-input" id="loginPassword" name="loginPassword" type="password" placeholder="Make it strong!">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label form-checkbox">
+                  <input class="form-input" type="checkbox">
+                  Remember Me
+                </label>
+              </div>
+
+              <div class="form-group">
+                <input class="form-submit button button-primary button-lg button-block" type="submit" value="Login">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer" role="contentinfo">
+      <div class="wrapper wrapper-md u-text-center">
+        <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/scripts/libs/validator.js"></script>
+    <script src="./form-login.js"></script>
+  </body>
+</html>

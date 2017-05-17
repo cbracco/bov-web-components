@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ClearType" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title, desc -->
+    <title>Component: The Calculator &bull; bov-web-components</title>
+    <meta name="description" content="A repository for learning web components with Modern Developer.">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../assets/styles/main.min.css">
+    <!-- Favicons: http://cbrac.co/11ZzQkJ -->
+  </head>
+
+  <body>
+    <!--[if lte IE 8]><div class="alert alert-neutral">It looks like you are using an outdated browser. Please <a href="http://whatbrowser.org">consider upgrading</a> for a faster, better, and safer web experience.</div><![endif]-->
+
+    <div class="banner banner-bg-dark banner-bg-image" role="banner">
+      <div class="wrapper wrapper-md u-text-center">
+        <h1 class="banner-heading">Chris Bracco</h1>
+
+        <h2 class="banner-subheading">Career Path 3: Modern Front-End Developer</h2>
+
+        <blockquote class="banner-quote quote">
+          <p>If I have seen further it is by standing on ye sholders of Giants.</p>
+
+          <cite><a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">Issac Newton</a></cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="main" role="main">
+      <section class="main-section">
+        <div class="wrapper wrapper-md">
+          <p class="u-text-center"><a class="backlink" href="../../index.html"><span class="icon">&larr;</span><br>Back to Home</a></p>
+
+          <h1>Project Assignment #5: The Calculator</h1>
+
+          <p>Create a calculator that has buttons corresponding to 0—9, addition, subtraction, multiplication, division, and a equals sign button. Ideally, you would find a cool calculator app on your mobile phone and try to replicate the design; you can skip any 3d shadows and complex gradients.</p>
+
+          <div class="calculator js-calculator">
+            <div class="grid">
+              <div class="grid-row">
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-clear button button-rounded button-chunky button-secondary js-calculator-clear">Clear</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-delete button button-rounded button-chunky button-secondary js-calculator-delete">Del</button>
+                </div>
+                <div class="grid-col u-width-6">
+                  <div id="js-calculator-screen" class="calculator-screen u-text-truncate">0</div>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">7</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">8</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">9</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">+</button>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">4</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">5</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">6</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">-</button>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">1</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">2</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">3</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">/</button>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number">0</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key button button-rounded button-chunky button-gray-dark js-calculator-number js-calculator-decimal">.</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-eval">=</button>
+                </div>
+                <div class="grid-col u-width-3">
+                  <button class="calculator-key calculator-operator button button-rounded button-chunky button-secondary js-calculator-symbol">*</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer" role="contentinfo">
+      <div class="wrapper wrapper-md u-text-center">
+        <p>Made with &#10084; by Chris Bracco. <br>Pattern courtesy of <a href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./calculator.js"></script>
+  </body>
+</html>
